@@ -1,3 +1,4 @@
+
 CREATE TABLE mentors
 (
     id SERIAL PRIMARY KEY,
@@ -27,6 +28,5 @@ CREATE TABLE attendance
 (
     id SERIAL PRIMARY KEY,
     class_id INT REFERENCES classes(id) NOT NULL,
-    students_id INT REFERENCES students(id) NOT NULL,
-    topic VARCHAR(120) NOT NULL
+    students_id INT REFERENCES students(id) NOT NULL
 );
